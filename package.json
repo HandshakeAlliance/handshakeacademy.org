@@ -62,7 +62,7 @@
     "dev": "NODE_ENV=development run-p setup dev-* || true",
     "prd-gulp": "NODE_ENV=production gulp prd",
     "prd-hexo": "NODE_ENV=production hexo gen",
-    "deploy": "NODE_ENV=production hexo clean && prd && hexo deploy",
+    "deploy": "NODE_ENV=production hexo clean && run-s prd && hexo deploy",
     "prd": "run-s setup prd-*",
     "test-server": "http-server public -p 7783 -a 127.0.0.1 -s -c-1 & echo $! > .test-server-id",
     "test-blc": "sleep 1 && blc --exclude-external -r --requests 32 http://127.0.0.1:7783/en && kill `cat .test-server-id` && rm .test-server-id",
