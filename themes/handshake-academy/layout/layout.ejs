@@ -1,0 +1,100 @@
+<%
+
+let {lang, tag, category, year, month, i18n} = page
+let data = site.data[lang]
+let pageTitle = page.title || config.subtitle || ''
+
+if (is_archive() === true) {
+  pageTitle = 'Archives'
+}
+
+if (is_tag() === true) {
+  pageTitle = 'Tag: ' + tag
+}
+
+if (is_category() === true) {
+  pageTitle = 'Category: ' + category
+}
+
+if (is_month() === true) {
+  pageTitle += ': ' + month + '/' + year
+}
+
+if (is_year() === true) {
+  pageTitle += ': ' + year
+}
+
+pageTitle = config.title
+
+let layouts = {
+  'generic': 'generic.ejs'
+}
+let layout = layouts[page.layout]
+
+%>
+
+<!doctype html>
+<html lang="<%=lang%>">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#885BE4">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Handshake, what is handshake, what is handshake alliance, handshake explained, handshake alliance, HNS, urkel, urkel explained, blockchain, scalable, applications, dapps, scaling, crypto, cryptoeconomics, open source"/>
+  <meta name="description" content="An educational resource to learn about handshake" />
+  <title><%=pageTitle%></title>
+  <% theme.stylesheets.forEach(url => { %>
+    <link type="text/css" rel="stylesheet" href="<%=url%>">
+  <% }) %>
+  <link rel="shortcut icon" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+
+  <!-- reCAPTCHA -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
+  <div class="container">
+    <div class="navbar-left">
+      <button class="navbar-toggler" type="button">☰</button>
+      <a class="navbar-brand" href="/<%=lang%>">
+        <img class="logo-dark" src="/img/logo-dark.svg" alt="logo dark">
+      </a>
+    </div>
+
+    <section class="navbar-mobile">
+      <span class="navbar-divider d-mobile-none"></span>
+      <ul class="nav nav-navbar">
+        <% Object.keys(data.menu).forEach(key => { %>
+          <li class="nav-item default-item">
+            <a class="nav-link" href="<%=data.menu[key]%>"><%=key%></a>
+          </li>
+        <% }) %>
+        <div id="replace-top-nav"></div>
+      </ul>
+    </section>
+
+    <a id="contribute-btn" class="btn btn-sm btn-round btn-success"
+      href="https://github.com/HandshakeAlliance" target="_blank" rel="noopener noreferrer">
+      <%=data.contribute%> <i class="fab fa-github"></i>
+    </a>
+  </div>
+</nav>
+
+<main id="main-content">
+  <% if (layout) { %>
+    <%- partial(layout) %>
+  <% } %>
+  <% if (!layout) { %>
+    <%-body%>
+  <% } %>
+</main>
+
+<!-- footer would go here -->
+
+<% theme.scripts.forEach(url => { %>
+  <script src="<%=url%>"></script>
+<% }) %>
+
+</body>
+</html>

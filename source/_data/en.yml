@@ -1,0 +1,59 @@
+i18n: true
+
+#
+# navigation
+#
+
+menu:
+  FAQ: /en/faq
+  Resources: /en/resources
+
+contribute: Contribute
+home: /en/
+
+#
+# index text
+#
+
+index:
+  jumbotron:
+    title: Handshake
+    message: A decentralized naming protocol as an alternative to existing Certificate Authorities. The protocol maintains the root zone file in a decentralized manner, making the root zone uncensorable, permissionless and free of gatekeepers.
+    get-started: Get started
+    get-started-url: /en/faq
+  cards:
+    paper:
+      title: White Paper
+      text: Get started by reading the Handshake white paper.
+    faqs:
+      title: FAQs
+      text: Check out some frequently asked questions.
+    learn:
+      title: Learn
+      text: Coming Soon
+  resources:
+    title: HandshakeAcademy
+    sub-title: Supporters
+    text: Check in on what other groups are building to support Handshake.
+  help:
+    title: Community
+    text: See what everyone is talking about.
+    report-issue: Report an issue
+  rss:
+    title: Forum
+    text: Your source of recent news and discussions regarding Handshake.
+    subscribe: Join the Discussion
+
+#
+# posts, categories, tags
+#
+
+category: Category
+categories: Categories
+categoryUri: /en/category
+tag: Tag
+tags: Tags
+tagUri: /en/tag
+pages: Pages
+posts: Posts
+postUri: /en/post

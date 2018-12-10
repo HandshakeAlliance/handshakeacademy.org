@@ -1,0 +1,21 @@
+backup
+
+# Development
+.vscode
+.DS_Store
+*.sublime-*
+
+# Distibution
+dist
+public
+themes/handshake-academy/source
+
+# Node
+node_modules
+npm-debug.log
+
+# hexo
+db.json
+debug.log
+.test-server-id
+.deploy_git
