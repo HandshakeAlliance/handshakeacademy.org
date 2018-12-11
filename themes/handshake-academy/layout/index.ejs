@@ -158,10 +158,12 @@ let {i18n} = page
       <p class="lead">
         <%=i18n('index.rss.text')%>
       </p>
-      <br>
-      <a id="subscribe-rss-btn" class="btn btn-lg btn-round btn-primary" href="https://forum.handshakealliance.org" target="_blank" rel="noopener noreferrer">
-        <%=i18n('index.rss.subscribe')%>
-      </a>
+      <form onsubmit="handleSubmit(event)">
+        <div class="d-flex flex-column align-items-center">
+          <input name="EMAIL" placeholder="<%=i18n('index.rss.placeholder') %>" class="form-control newsletter-input" type="email">
+          <input type="submit" id="subscribe-newsletter-btn" class="btn btn-lg btn-round btn-primary newsletter-submit" value="<%=i18n('index.rss.subscribe')%>">
+        </div>
+      </form>
     </header>
   </div>
 </section>
