@@ -158,12 +158,15 @@ let {i18n} = page
       <p class="lead">
         <%=i18n('index.rss.text')%>
       </p>
-      <form onsubmit="handleSubmit(event)">
+      <form id="newsletter-form" onsubmit="handleSubmit(event)">
         <div class="d-flex flex-column align-items-center">
           <input name="EMAIL" placeholder="<%=i18n('index.rss.placeholder') %>" class="form-control newsletter-input" type="email">
           <input type="submit" id="subscribe-newsletter-btn" class="btn btn-lg btn-round btn-primary newsletter-submit" value="<%=i18n('index.rss.subscribe')%>">
         </div>
       </form>
+      <div class="successMessage">
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="70"><circle class="checkmarkCircle" cx="26" cy="26" r="23" fill="none"></circle><path class="checkmarkCheck" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
+      </div>
     </header>
   </div>
 </section>

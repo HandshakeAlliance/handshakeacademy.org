@@ -281,6 +281,9 @@ window.handleSubmit = function (e) {
         return;
       } else {
         email[0].value = "";
+        $("#newsletter-form").hide();
+        $(".successMessage").show(); // Show the checkmark
+        $("svg").addClass("active"); // Start animation of checkmark
       }
     });
 }
