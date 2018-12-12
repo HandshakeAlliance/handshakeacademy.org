@@ -1,4 +1,5 @@
 let $ = require('jquery');
+let toastr = require('toastr');
 
 let body = $('body'),
     navbar = $('.navbar'),
@@ -252,6 +253,24 @@ $('body').scrollspy({
 window.handleSubmit = function (e) {
   e.preventDefault();
 
+  toastr.options = {
+    closeButton: false,
+    debug: false,
+    newestOnTop: false,
+    progressBar: true,
+    positionClass: "toast-bottom-center",
+    preventDuplicates: true,
+    onclick: null,
+    showDuration: "300",
+    hideDuration: "1000",
+    timeOut: "5000",
+    extendedTimeOut: "1000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut"
+  };
+
   let validForm = true; // Set initial state of valid form to true
 
   let email = $(`input[name="EMAIL"]`);
@@ -278,6 +297,7 @@ window.handleSubmit = function (e) {
   }) // All done! Let's show the user a success message:
     .done(function(data) {
       if (data.result === "error") {
+        toastr.error('Please enter an email');
         return;
       } else {
         email[0].value = "";
