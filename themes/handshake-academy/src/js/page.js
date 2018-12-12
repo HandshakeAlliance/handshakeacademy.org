@@ -276,7 +276,7 @@ window.handleSubmit = function (e) {
   let email = $(`input[name="EMAIL"]`);
 
   if (email.val() === "") {
-    //Handle some error here
+    toastr.error('Please enter an email address');
     return;
   }
 
@@ -297,7 +297,7 @@ window.handleSubmit = function (e) {
   }) // All done! Let's show the user a success message:
     .done(function(data) {
       if (data.result === "error") {
-        toastr.error('Please enter an email');
+        toastr.error('This email is already registered');
         return;
       } else {
         email[0].value = "";
