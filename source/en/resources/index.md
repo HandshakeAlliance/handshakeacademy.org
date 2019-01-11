@@ -41,6 +41,6 @@ Or pickup Nomenclate in a convenient JS package Get it here: https://github.com/
 ### Testnet Faucet
 A simple token faucet that allows devs and users alike to get their hands on some free testnet HNS tokens. Simply provide your address and the site will send you a small portion of a greater pool of accumulated tokens. No sign up or personal information needed!
 
-https://github.com/HandshakeAlliance/testnet-faucet
+https://faucet.handshakealliance.org/
 
 <!-- Paid Products? -->
