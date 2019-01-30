@@ -18,6 +18,14 @@ If you are more of a fan of throwback styling and from-the-source information, h
 
 https://handshake.org/files/handshake.txt
 
+### Handshake Reading List
+The Handshake community has been busy writing great articles explaining the purpose and technical merits of Handshake. Below are some of our favorites:
+
+[The Case for Handshake - Amentum](https://medium.com/amentum/the-case-for-handshake-9b0af0d989fe)
+[Handshake, ENS and Decentralized Naming Services Explained - Imran Khan](https://medium.com/zkcapital/handshake-ens-and-decentralized-naming-services-explained-2e69a1ca1313)
+[Everything You Didn’t Know About the Handshake Naming System - Chjango Unchained](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
+
+
 ## Documentation and Guides
 ### HSD Docs
 The HSD, or the Handshake Daemon is the node that powers the blockchain. For an in-depth look on how Handshake's protocol behaves and its official documentation, checkout their [website](https://handshake-org.github.io/), or jump straight into their documentation:
@@ -42,5 +50,6 @@ Or pickup Nomenclate in a convenient JS package Get it here: https://github.com/
 A simple token faucet that allows devs and users alike to get their hands on some free testnet HNS tokens. Simply provide your address and the site will send you a small portion of a greater pool of accumulated tokens. No sign up or personal information needed!
 
 https://github.com/HandshakeAlliance/testnet-faucet
+
 
 <!-- Paid Products? -->
