@@ -24,7 +24,9 @@ https://handshake.org/files/handshake.txt
 The Handshake community has been busy writing great articles explaining the purpose and technical merits of Handshake. Below are some of our favorites:
 
 [The Case for Handshake - Amentum](https://medium.com/amentum/the-case-for-handshake-9b0af0d989fe)
+
 [Handshake, ENS and Decentralized Naming Services Explained - Imran Khan](https://medium.com/zkcapital/handshake-ens-and-decentralized-naming-services-explained-2e69a1ca1313)
+
 [Everything You Didn’t Know About the Handshake Naming System - Chjango Unchained](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
 
 
