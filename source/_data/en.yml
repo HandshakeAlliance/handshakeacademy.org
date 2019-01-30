@@ -40,9 +40,14 @@ index:
     text: See what everyone is talking about.
     report-issue: Report an issue
   rss:
-    title: Forum
-    text: Your source of recent news and discussions regarding Handshake.
-    subscribe: Join the Discussion
+    title: Newsletter
+    text: Stay current with our latest updates and announcements
+    subscribe: Subscribe
+    placeholder: Enter your email
+  # rss:
+  #   title: Forum
+  #   text: Your source of recent news and discussions regarding Handshake.
+  #   subscribe: Join the Discussion
 
 #
 # posts, categories, tags

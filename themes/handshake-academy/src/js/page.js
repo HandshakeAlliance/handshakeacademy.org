@@ -1,4 +1,5 @@
 let $ = require('jquery');
+let toastr = require('toastr');
 
 let body = $('body'),
     navbar = $('.navbar'),
@@ -247,3 +248,62 @@ $('body').scrollspy({
     });
   }
 })();
+
+//  -------- User Signup Functionality ---------
+window.handleSubmit = function (e) {
+  e.preventDefault();
+
+  toastr.options = {
+    closeButton: false,
+    debug: false,
+    newestOnTop: false,
+    progressBar: true,
+    positionClass: "toast-bottom-center",
+    preventDuplicates: true,
+    onclick: null,
+    showDuration: "300",
+    hideDuration: "1000",
+    timeOut: "5000",
+    extendedTimeOut: "1000",
+    showEasing: "swing",
+    hideEasing: "linear",
+    showMethod: "fadeIn",
+    hideMethod: "fadeOut"
+  };
+
+  let validForm = true; // Set initial state of valid form to true
+
+  let email = $(`input[name="EMAIL"]`);
+
+  if (email.val() === "") {
+    toastr.error('Please enter an email address');
+    return;
+  }
+
+  let formData = email.serialize();
+
+  $.ajax({
+    type: "post",
+    url:
+      "https://urkel.us19.list-manage.com/subscribe/post-json?u=4f327a17a091f4dc9fddf20f5&amp;id=d2f2203f03&c=?",
+    data: formData,
+    cache: false,
+    dataType: "json",
+    contentType: "application/json; charset=utf-8",
+    encode: true,
+    error: function(err) {
+      console.log("Uh, oh. There was an error:", err);
+    }
+  }) // All done! Let's show the user a success message:
+    .done(function(data) {
+      if (data.result === "error") {
+        toastr.error('This email is already registered');
+        return;
+      } else {
+        email[0].value = "";
+        $("#newsletter-form").hide();
+        $(".successMessage").show(); // Show the checkmark
+        $("svg").addClass("active"); // Start animation of checkmark
+      }
+    });
+}
