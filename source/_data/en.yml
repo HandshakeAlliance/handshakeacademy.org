@@ -31,14 +31,15 @@ index:
     learn:
       title: Learn
       text: Coming Soon
-  resources:
+  supporters:
     title: HandshakeAcademy
     sub-title: Supporters
     text: Check in on what other groups are building to support Handshake.
-  help:
+  community:
     title: Community
-    text: See what everyone is talking about.
-    report-issue: Report an issue
+  resources:
+    title: Resources
+    text: See what the community is up to
   rss:
     title: Newsletter
     text: Stay current with our latest updates and announcements
