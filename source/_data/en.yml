@@ -7,6 +7,7 @@ i18n: true
 menu:
   FAQ: /en/faq
   Resources: /en/resources
+  How To: /en/howto
 
 contribute: Contribute
 home: /en/
@@ -30,7 +31,7 @@ index:
       text: Check out some frequently asked questions.
     learn:
       title: Learn
-      text: Coming Soon
+      text: Step-by-step guides for everything Handshake.
   supporters:
     title: HandshakeAcademy
     sub-title: Supporters
