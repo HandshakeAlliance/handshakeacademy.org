@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: center;
-  background: #202020;
+  background: #fff;
   display: flex;
   height: 60px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 12px;
 
   @media (min-width: ${props => props.theme.breakpoint.desktopMin}) {
@@ -15,6 +15,29 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoLeft = styled.div`
-  height: 40px;
   width: auto;
+`;
+
+export const Item = styled.a`
+  color: hsla(0, 0%, 46%, .8);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 18px;
+  text-decoration: none;
+`;
+
+export const Contribute = styled.a`
+  border: 2px solid #3cd458;
+  border-radius: 50px;
+  color: #3cd458;
+  font-weight: 600;
+  margin-left: auto;
+  padding: 8px 20px 6px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background: #3cd458;
+    color: #fff;
+  }
 `;
