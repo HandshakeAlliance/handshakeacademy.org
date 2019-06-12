@@ -16,34 +16,49 @@ export default class ProjectsComponent extends Component {
         <Projects.Header>Projects</Projects.Header>
         <Projects.Hr />
         <Projects.CardContainer>
+          <Projects.Card href="https://www.reddit.com/r/handshake/" target="_blank">
+            <Projects.Brand><i class="fab fa-reddit fa-3x"></i></Projects.Brand>
+            Reddit
+          </Projects.Card>
+
+          <Projects.Card href="https://twitter.com/HNSAlliance" target="_blank">
+            <Projects.Brand><i class="fab fa-twitter fa-3x"></i></Projects.Brand>
+            Reddit
+          </Projects.Card>
+
+          <Projects.Card href="https://github.com/HandshakeAlliance" target="_blank">
+            <Projects.Brand><i class="fab fa-github fa-3x"></i></Projects.Brand>
+            Reddit
+          </Projects.Card>
+
           <Projects.Card href="https://hnscan.com" target="_blank">
             <Projects.Brand><HNScan /></Projects.Brand>
-            The unofficial Handshake block explorer. Claim your airdrops or delve into the chain here.
+            HNScan
           </Projects.Card>
 
           <Projects.Card href="https://handshakehash.com/" target="_blank">
             <Projects.Brand><HNSPool /></Projects.Brand>
-            Never mine alone again. Join a community of miners dedicated to solving blocks efficiently.
+            Handshake Pool
           </Projects.Card>
 
           <Projects.Card href="https://handshakeacademy.org" target="_blank">
             <Projects.Brand><HNSAcademy /></Projects.Brand>
-            Whether you're just getting started with Handshake, or if you're a veteran developer, this is the defacto location for online resources.
+            Handshake Alliance
           </Projects.Card>
 
           <Projects.Card href="https://nameian.com" target="_blank">
             <Projects.Brand><Nameian /></Projects.Brand>
-            The primary Name notification service. Names on the network go fast, so be the first to know.
+            Nameian
           </Projects.Card>
 
           <Projects.Card href="https://handshake.community/categories" target="_blank">
             <Projects.Brand><HandshakeCommunity /></Projects.Brand>
-            Join the Handshake Community on our forums. Discuss development, mining, or anything else Handshake related. Start contributing!
+            Handshake Community
           </Projects.Card>
 
           <Projects.Card href="https://handshake.org/" target="_blank">
             <Projects.Brand><HandshakeDocs /></Projects.Brand>
-            General Handshake documentation for newbies. You can find the notes on the daemon and node here.
+            Handshake Docs
           </Projects.Card>
         </Projects.CardContainer>
       </Projects.Wrapper>
