@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoLeft = styled.div`
+  margin-right: 24px;
   width: auto;
 `;
 

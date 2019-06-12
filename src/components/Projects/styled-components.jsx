@@ -28,6 +28,7 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 720px;
 `;
 
 export const Card = styled.a`

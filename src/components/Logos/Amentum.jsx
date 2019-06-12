@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const cls1 = {
-  'fill': '#fff',
+  'fill': '#000',
   'fontSize': '18.29px',
   'fontFamily': "'HelveticaNeue-Bold','Helvetica Neue'",
   'fontWeight': 700

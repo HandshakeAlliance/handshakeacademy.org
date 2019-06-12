@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background: #252525;
+  background: #fff;
   height: auto;
   padding: 75px 25px 50px 25px;
   @media (min-width: ${props => props.theme.breakpoint.desktopMin}) {
@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-  color: #f2f2f2;
+  color: #000;
   font-size: 26px;
   margin: 0 0 16px;
 `;
@@ -37,10 +37,11 @@ export const Logos = styled.div`
 
 export const LogoWrapper = styled.a`
   cursor: pointer;
-  filter: grayscale(100%);
   margin: 45px;
+  transition: all 0.5s ease;
 
   &:hover {
     filter: none;
+    transform: scale(1.1);
   }
 `;
