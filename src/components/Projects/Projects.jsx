@@ -7,8 +7,6 @@ import Nameian from '../Logos/Nameian';
 import HandshakeCommunity from '../Logos/HandshakeCommunity';
 import HandshakeDocs from '../Logos/HandshakeDocs';
 
-// TODO consider adding roadmap or progress notes to each card
-
 export default class ProjectsComponent extends Component {
   render() {
     return (
@@ -17,17 +15,17 @@ export default class ProjectsComponent extends Component {
         <Projects.Hr />
         <Projects.CardContainer>
           <Projects.Card href="https://www.reddit.com/r/handshake/" target="_blank">
-            <Projects.Brand><i class="fab fa-reddit fa-3x"></i></Projects.Brand>
+            <Projects.Brand><i className="fab fa-reddit fa-3x"></i></Projects.Brand>
             Reddit
           </Projects.Card>
 
           <Projects.Card href="https://twitter.com/HNSAlliance" target="_blank">
-            <Projects.Brand><i class="fab fa-twitter fa-3x"></i></Projects.Brand>
+            <Projects.Brand><i className="fab fa-twitter fa-3x"></i></Projects.Brand>
             Reddit
           </Projects.Card>
 
           <Projects.Card href="https://github.com/HandshakeAlliance" target="_blank">
-            <Projects.Brand><i class="fab fa-github fa-3x"></i></Projects.Brand>
+            <Projects.Brand><i className="fab fa-github fa-3x"></i></Projects.Brand>
             Reddit
           </Projects.Card>
 
