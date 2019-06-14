@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   align-items: center;
-  background: #252525;
+  background: #fff;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-  color: #f2f2f2;
+  color: #000;
   font-size: 26px;
   margin: 0 0 16px;
 `;
@@ -22,7 +22,7 @@ export const Hr = styled.hr`
 `;
 
 export const Body = styled.p`
-  color: #f2f2f2;
+  color: #000;
   max-width: 400px;
   margin-bottom: 35px;
 

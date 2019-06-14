@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 75px 24px 35px;
-  background: #202020;
+  background: #fff;
 `;
 
 export const ActionContainer = styled.div`
@@ -49,10 +49,10 @@ export const SubscribeLabel = styled.div`
 `;
 
 export const SubscribeInput = styled.input`
-  background: #363636;
+  background: #white;
   border: 1.5px solid #696969;
   border-radius: 2px;
-  color: #fafafa;
+  color: #000;
   font-size: 16px;
   margin-bottom: 12px;
   min-width: 220px;
@@ -94,14 +94,14 @@ export const Header = styled.div`
 `;
 
 export const Link = styled.a`
-  color: #f2f2f2;
+  color: #000;
   font-size: 14px;
   font-weight: 300;
   padding: 5px 0;
   text-decoration: none;
 
   &:visited {
-    color: #f2f2f2;
+    color: #000;
   }
   &:hover {
     color: #693afa;
@@ -141,7 +141,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Fa = styled.a`
-  color: #fff;
+  color: #000;
   margin: 24px;
   font-size: 14pt;
 
