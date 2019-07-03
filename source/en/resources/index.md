@@ -29,6 +29,8 @@ The Handshake community has been busy writing great articles explaining the purp
 
 [Everything You Didn’t Know About the Handshake Naming System - Chjango Unchained](https://hackernoon.com/everything-you-didnt-know-about-the-handshake-naming-system-how-this-blockchain-project-will-483464309f33)
 
+[The Fall of Certificate Authorities and The Rise of Handshake - Imran Khan](https://www.tokendaily.co/blog/the-fall-of-certificate-authorities-and-the-rise-of-handshake)
+
 
 ## Documentation and Guides
 ### HSD Docs
